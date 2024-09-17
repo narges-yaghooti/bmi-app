@@ -1,11 +1,9 @@
-import 'dart:ffi';
+
 
 import 'package:bmi_app_v1/pages/home-page.dart';
-import 'package:flutter/cupertino.dart';
+
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
-import 'package:flutter/widgets.dart';
-import 'package:blurrycontainer/blurrycontainer.dart';
+
 
 class StartPage extends StatefulWidget {
   const StartPage({super.key});
@@ -71,13 +69,13 @@ class _StartPageState extends State<StartPage> {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => const HomePage(),
+                          builder: (context) =>  HomePage(),
                         ),
                       );
                     },
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
+                      children:  [
                         Text(
                           "Get Started",
                           style: TextStyle(color: Colors.white, fontSize: 20),

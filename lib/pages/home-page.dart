@@ -1,16 +1,17 @@
-import 'dart:ffi';
-import 'dart:math';
+
 
 import 'package:bmi_app_v1/enums.dart';
-import 'package:bmi_app_v1/pages/resault-page.dart';
+
 import 'package:bmi_app_v1/widgets/container_size.dart';
-import 'package:bmi_app_v1/widgets/height_container.dart';
-import 'package:flutter/cupertino.dart';
+
+
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
 class HomePage extends StatefulWidget {
-  const HomePage({super.key});
+
+  HomePage({
+    super.key,
+  });
 
   @override
   State<HomePage> createState() => _HomePageState();
@@ -277,12 +278,7 @@ class _HomePageState extends State<HomePage> {
                   ),
                 ),
                 onPressed: () {
-                   Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => const ResaultPage(),
-                    ),
-                  );
+               
                 },
                 child: const Row(
                   mainAxisAlignment: MainAxisAlignment.center,
@@ -294,7 +290,7 @@ class _HomePageState extends State<HomePage> {
                     SizedBox(width: 14),
                     Icon(
                       Icons.calculate,
-                      color: const Color(0xff9188f1),
+                      color:  Color(0xff9188f1),
                       size: 26,
                     )
                   ],
